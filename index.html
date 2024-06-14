@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desvendando os Segredos do Git e GitHub</title>
+
+</head>
+<body>
+
+    <p><center><a href="videos.html">Vídeo</a> <a href="audio.html">Áudio</a></center></p>
+
+    
+<h1>Desvendando o Git e o GitHub</h1>
+<audio></audio>
+<p>Seja você um desenvolvedor experiente ou um iniciante, o Git e o GitHub são ferramentas essenciais e indispensáveis para qualquer desenvolvedor que deseja trabalhar em projetos colaborativos e manter um histórico preciso das mudanças no código. Eles são como um sistema nervoso para projetos de software, garantindo que tudo funcione como esperado e que o progresso seja acompanhado de perto.</p>
+<h2>O que é Git?</h2>
+
+<p>O Git é um sistema de controle de versão que registra todas as alterações feitas em seus arquivos, permitindo que você retorne a qualquer momento no passado, compare versões, colabore com outros desenvolvedores e muito mais. Ele permite que você: </p>
+
+<ul>
+    <li><b>Controle as versões do seu projeto</b>: Salve diferentes estados do seu código ao longo do tempo, permitindo que você volte para versões anteriores se necessário.</li>
+    <li><b>Colabore com outros desenvolvedores</b>: Trabalhe simultaneamente em um projeto com outros, mesclando alterações de forma eficiente.</li>
+    <li><b>Gerencie conflitos</b>: Resolva conflitos que podem surgir quando vários desenvolvedores trabalham no mesmo arquivo.</li>
+    <li><b>Faça backup do seu código</b>: Guarde o código em um repositório seguro, garantindo que você não o perca.</li>
+</ul>
+
+<h2>O que é GitHub?</h2>
+
+<p>O GitHub é um site que hospeda repositórios Git, tornando o trabalho em equipe muito mais fácil. É como um repositório online onde você pode
+    compartilhar seu código, colaborar com outros desenvolvedores, receber feedback e até mesmo contribuir para projetos open source.. Você pode usar o GitHub para:</p>
+
+<ul>
+    <li><b>Criar repositórios Git públicos e privados</b>: Armazene seus projetos online, compartilhando-os com outras pessoas ou mantendo-os privados.</li>
+    <li><b>Colabore em projetos</b>: Trabalhe em conjunto com outros desenvolvedores, utilizando recursos de controle de versão e ferramentas de colaboração.</li>
+    <li><b>Gerencie seus projetos</b>: Use recursos como issues, pull requests, wikis e releases para organizar seu trabalho.</li>
+    <li><b>Explore projetos de código aberto</b>: Descubra e contribua com projetos de código aberto de diversos desenvolvedores.</li>
+</ul>
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git e GitHub: Uma Introdução Completa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9; /* adicionado um fundo branco */
+        }
+        h1, h2, h3 {
+            text-align: center;
+            color: #333; /* adicionado uma cor mais escura para os títulos */
+        }
+        pre {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ddd; /* adicionado uma borda para as células da tabela */
+            padding: 8px;
+        }
+        a {
+            text-decoration: none;
+            color: #356086; /* adicionado uma cor para os links */
+        }
+        a:hover {
+            color: #23527c; /* adicionado uma cor azul mais escura para os links ao passar o mouse */
+        }
+        
+    body {
+    background: linear-gradient(to right, #f8f8f8, #c9cacf); /* fundo em degradê */
+    }
+    tr:nth-child(even) {
+    background-color: #c4c6d7; /* linhas pares com cor diferente */
+    }
+    td {
+    border: 1px solid #000000;
+    padding: 10px;
+    }
+    h1 {
+    text-align: center;
+    color: #0c1d32; /*cor titulo principal*/
+    font-size: 2.5em;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+    text-align: center;
+    color: #1c3552; /* cor subtitulos*/
+    font-size: 2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    border: 5px solid #000000; /* cor da borda */
+    border-radius: 15px; /* arredondar a borda */
+    padding: 20px; /* espaçamento interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* sombra para destaque */
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+<h2>Como usar o Git</h2>
+
+<h3>Configuração</h3>
+
+<ol>
+    <li><b>Instale o Git</b>: Baixe e instale o Git em seu sistema operacional: <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></li>
+    <li><b>Configure o Git</b>: Abra o terminal e execute os seguintes comandos para configurar o Git com seu nome e email:</li>
+    <ul>
+        <li><code>git config --global user.name "Seu Nome"</code></li>
+        <li><code>git config --global user.email "seu_email@example.com"</code></li>
+    </ul>
+    <li><b>Verifique a configuração</b>: Execute o comando <code>git config --list</code> para verificar se a configuração foi aplicada corretamente.</li>
+</ol>
+
+<h3> Comandos básicos do Git para dominar</h3>
+<p>Aqui estão os comandos do Git e suas descrições:</p>
+
+<table>
+    <tr>
+        <th>Comando</th>
+        <th>Descrição</th>
+        <th>Exemplo</th>
+    </tr>
+    <tr>
+        <td><code>git init</code></td>
+        <td>Inicializa um novo repositório Git no diretório atual.</td>
+        <td><code>git init</code></td>
+    </tr>
+    <tr>
+        <td><code>git clone <url></code></td>
+        <td>Cria uma cópia local de um repositório Git remoto.</td>
+        <td><code>git clone https://github.com/user/repo.git</code></td>
+    </tr>
+    <tr>
+        <td><code>git branch <nome_do_branch></code></td>
+        <td>Cria um novo branch.</td>
+        <td><code>git branch feature</code></td>
+    </tr>
+    <tr>
+        <td><code>git checkout <nome_do_branch></code></td>
+        <td>Troca para um branch existente.</td>
+        <td><code>git checkout feature</code></td>
+    </tr>
+    <tr>
+        <td><code>git status</code></td>
+        <td>Exibe o estado atual do repositório, mostrando os arquivos modificados, adicionados e não rastreados.</td>
+        <td><code>git status</code></td>
+    </tr>
+    <tr>
+        <td><code>git diff</code></td>
+        <td>Mostra as diferenças entre os arquivos modificados e suas versões originais.</td>
+        <td><code>git diff</code></td>
+    </tr>
+    <tr>
+        <td><code>git add <arquivo></code></td>
+        <td>Adiciona um arquivo ao staging area.</td>
+        <td><code>git add index.html</code></td>
+    </tr>
+    <tr>
+        <td><code>git commit -m "<mensagem>"</code></td>
+        <td>Salva as alterações no staging area em um novo commit.</td>
+        <td><code>git commit -m "Adicionou a página inicial"</code></td>
+    </tr>
+    <tr>
+        <td><code>git push</code></td>
+        <td>Envia os commits locais para o repositório remoto.</td>
+        <td><code>git push origin main</code></td>
+    </tr>
+    <tr>
+        <td><code>git pull</code></td>
+        <td>Baixa os commits do repositório remoto e mescla-os com o branch local.</td>
+        <td><code>git pull origin main</code></td>
+    </tr>
+    <tr>
+        <td><code>git revert <commit></code></td>
+        <td>Cria um novo commit que desfaz as alterações de um commit específico.</td>
+        <td><code>git revert 1234567</code></td>
+    </tr>
+    <tr>
+        <td><code>git merge <branch></code></td>
+        <td>Mescla as alterações de um branch específico no branch atual.</td>
+        <td><code>git merge feature</code></td>
+    </tr>
+    <tr>
+        <td><code>git stash</code></td>
+        <td>Salva as alterações locais não rastreadas no staging area, para que você possa trocar de branch.</td>
+        <td><code>git stash</code></td>
+    </tr>
+    <tr>
+        <td><code>git rm <arquivo></code></td>
+        <td>Remove um arquivo do repositório.</td>
+        <td><code>git rm style.css</code></td>
+    </tr>
+    <tr>
+        <td><code>git config <key> <value></code></td>
+        <td>Configura opções do Git.</td>
+        <td><code>git config --global core.editor "vim"</code></td>
+    </tr>
+    <tr>
+        <td><code>git reset <commit></code></td>
+        <td>Move o HEAD para um commit específico, descartando as alterações posteriores.</td>
+        <td><code>git reset HEAD~1</code></td>
+    </tr>
+    <tr>
+        <td><code>git remote add <nome> <url></code></td>
+        <td>Adiciona um repositório remoto ao repositório local.</td>
+        <td><code>git remote add origin https://github.com/user/repo.git</code></td>
+    </tr>
+    <tr>
+        <td><code>git fetch <nome></code></td>
+        <td>Baixa os commits do repositório remoto, sem mesclá-los no branch local.</td>
+        <td><code>git fetch origin</code></td>
+    </tr>
+    <tr>
+        <td><code>git show <commit></code></td>
+        <td>Exibe informações sobre um commit específico.</td>
+        <td><code>git show 1234567</code></td>
+    </tr>
+    <tr>
+        <td><code>git help <comando></code></td>
+        <td>Obtém ajuda sobre um comando do Git.</td>
+        <td><code>git help status</code></td>
+    </tr>
+    <tr>
+        <td><code>git rebase <branch></code></td>
+        <td>Reescreve o histórico de commits do branch atual, aplicando as alterações do branch de destino.</td>
+        <td><code>git rebase feature</code></td>
+    </tr>
+    <tr>
+        <td><code>git blame <arquivo></code></td>
+        <td>Mostra quem fez cada alteração em um arquivo.</td>
+        <td><code>git blame index.html</code></td>
+    </tr>
+    <tr>
+        <td><code>git tag <nome_da_tag> <commit></code></td>
+        <td>Cria uma tag para um commit específico.</td>
+        <td><code>git tag v1.0 1234567</code></td>
+    </tr>
+</table>
+
+<h2>Como usar o GitHub</h2>
+
+<h3>Configuração</h3>
+
+<ol>
+    <li><b>Crie uma conta no GitHub</b>: Visite <a href="https://github.com/">https://github.com/</a> e crie uma conta gratuita.
+    <li><b>Crie um repositório</b>: Acesse o seu perfil do GitHub e clique em "New repository" para criar um novo repositório.
+    <li><b>Conecte seu repositório local</b>:
+    <ul>
+        <li>Acesse o repositório local que você quer conectar ao GitHub.</li>
+        <li>Execute o comando <code>git remote add origin <url_do_repositório_github></code> para adicionar o repositório remoto.</li>
+        <li>Execute o comando <code>git push -u origin main</code> para enviar os commits locais para o repositório remoto.</li>
+    </ul>
+</ol>
+
+<h3>Recursos do GitHub</h3>
+
+<p>O GitHub oferece vários recursos para gerenciar seus projetos:</p>
+
+<ul>
+    <li><b>Issues</b>: Crie issues para reportar problemas, bugs ou sugestões.</li>
+    <li><b>Pull Requests</b>: Envie pull requests para contribuir com projetos de código aberto ou para colaborar em projetos com outros desenvolvedores.</li>
+    <li><b>Wikis</b>: Crie wikis para documentar seu projeto e compartilhar informações relevantes.</li>
+    <li><b>Releases</b>: Publique releases para seus projetos, gerenciando diferentes versões do seu código.</li>
+</ul>
+
+<h2>Exemplo prático: Criando um site simples utilizando HTML com Git e GitHub</h2>
+
+<h3>1º Iniciando um novo repositório Git</h3>
+
+<ol>
+    <li>Abra o terminal e navegue até o diretório onde você deseja criar o projeto.</li>
+    <li>Execute o comando <code>git init</code> para inicializar um novo repositório Git.</li>
+</ol>
+
+<h3>2º Criando a página HTML inicial</h3>
+
+<ol>
+    <li>Crie um novo arquivo chamado `index.html` no diretório do projeto.</li>
+    <li>Adicione o seguinte código HTML ao arquivo:</li>
+</ol>
+
+<pre><code><pre><code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="pt-BR"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title&gt;Título da Página&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Olá, mundo!&lt;/h1&gt;
+        &lt;p&gt;Este é um exemplo para o código HTML.&lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+        </code></pre>
+    </body>
+    </html>
+</pre></code>
+<h3>3º Adicionando o arquivo ao repositório</h3>
+
+<ol>
+    <li>Execute o comando <code>git add index.html</code> para adicionar o arquivo ao staging area.</li>
+    <li>Execute o comando <code>git commit -m "Adicionou a página inicial"</code> para salvar a alteração no repositório.</li>
+</ol>
+
+<h3>4º Criando um repositório no GitHub</h3>
+
+<ol>
+    <li>Acesse o seu perfil do GitHub e clique em "New repository".</li>
+    <li>Digite um nome para o repositório (ex: "meu-site-simples") e uma descrição breve.</li>
+    <li>Deixe a opção "Initialize this repository with a README" marcada.</li>
+    <li>Clique em "Create repository".</li>
+</ol>
+
+<h3>5º Conectando o repositório local ao GitHub</h3>
+
+<ol>
+    <li>Execute o comando <code>git remote add origin <url_do_repositório_github></code> para adicionar o repositório remoto.</li>
+    <li>Execute o comando <code>git push -u origin main</code> para enviar os commits locais para o repositório remoto.</li>
+</ol>
+
+<h3>6º Adicionando conteúdo ao site</h3>
+
+<ol>
+    <li>Crie um novo arquivo chamado `sobre.html` no diretório do projeto.</li>
+    <li>Adicione o seguinte código HTML ao arquivo:</li>
+</ol>
+
+<pre><code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="pt-BR"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title&gt;Título da Página&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;p&gt;Esse é apenas um exemplo de site em HTML para demonstração.&lt;/p&gt;
+    &lt;p&gt;Utilize as informações para criar o seu próprio site!&lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+        </code></pre>
+    </body>
+    </html>
+</code></pre>
+
+<pre><code>
+git add sobre.html
+git commit -m "Adicionou a página sobre"
+git push origin main
+</code></pre>
+
+
+<h3>7º Visualizando o site online</h3>
+
+<ol>
+    <li>Acesse o repositório no GitHub e clique no botão "Code".</li>
+    <li>Copie o link do repositório.</li>
+    <li>Abra o link em um navegador web e você poderá visualizar o site online.</li>
+</ol>
+
+<h2>Conclusão</h2>
+
+<p> Esse documento teve o objetivo de apresentar como funciona, e como faz o uso do sistema de controle de versões Git [https://git-
+    scm.com/ ] e do repositório GitHub [https://github.com/].</p>
+
+<p>Lembrando que este é apenas um guia introdutório. Existem muitas outras funcionalidades e recursos disponíveis no Git e no GitHub, sendo interassante explorar a documentação oficial e os tutoriais online para aprender mais sobre essas ferramentas e como usá-las para otimizar o desenvolvimento.</p>
+
+<p> - Por Raissa Nunes (2024.1.08.021) e Ana Flávia Freiria (2024.1.08.01)</p>
+</body>
+</html>
